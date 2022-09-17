@@ -4,11 +4,7 @@
 
 ![itesm](/img/LogoTec2.jpg)
 
-## Armando Bringas Corpus
-
-### A01200230
-
----
+## Armando Bringas Corpus (A01200230)
 
 ```markdown
 Note: The notebooks in this repository where created with Jupyter notebook through Anaconda
