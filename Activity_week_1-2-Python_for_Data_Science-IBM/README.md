@@ -4,4 +4,4 @@
 
 Course progress evidence
 
-![Course progress 1](\..\img\course-progress-1.png)
+![Course progress 1](../img/course-progress-1.png)
