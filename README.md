@@ -4,15 +4,8 @@
 
 ![itesm](/img/LogoTec2.jpg)
 
-## Armando Bringas Corpus
+## Armando Bringas Corpus (A01200230)
 
-### A01200230
-
----
-
-```markdown
-Note: The notebooks in this repository where created with Jupyter notebook through Anaconda
-Python 3.10.4
-```
+> **_NOTE:_** The notebooks in this repository where created with Jupyter notebook through Anaconda, Python 3.10.4
 
 * [Week 1-2 Activity: Python for Data Science (IBM), Modules 1-3](Activity_week_1-2-Python_for_Data_Science-IBM)
