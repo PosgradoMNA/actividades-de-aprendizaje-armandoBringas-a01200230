@@ -1,6 +1,6 @@
 # IBM: PY0101EN - Python for Data Science
 
-## Activity Week 1-2, Modules 1-3
+## Activity Week 3, Module 4
 
 Course progress evidence
 
