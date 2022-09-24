@@ -1,0 +1,3 @@
+Hello there, this a sample filo to download from Armi's GitHub
+and load to Jupyter Notebook
+and work with the file using Python
