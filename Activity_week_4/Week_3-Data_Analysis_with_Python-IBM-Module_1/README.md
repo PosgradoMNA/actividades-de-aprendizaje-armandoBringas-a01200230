@@ -8,7 +8,7 @@
   * [IBM Labs](./1_IBM-Labs/)
 * Evidencias
   * [Apuntes propios del curso](./2_Notebooks_Evidencias_y_Apuntes/)
-  * [Evidencia del quiz](2_Notebooks_Evidencias_y_Apuntes\A01200230-Graded_Review_Questions-Data_Analysis_with_Python-Module1.pdf)
+  * [Evidencia del quiz](2_Notebooks_Evidencias_y_Apuntes\Graded_Questions-Module1.pdf)
 
 Captura de pantalla mostrando evidencia de avance en el curso
 
