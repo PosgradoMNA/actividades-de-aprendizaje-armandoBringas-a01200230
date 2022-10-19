@@ -1,4 +1,4 @@
-# Semana 2 - Actividad 1: Python for Data Science (IBM)
+# Semana 6 - Actividad: Data Analysis with Python (IBM)
 
 ## Contenidos
 
@@ -8,8 +8,8 @@
   * [IBM Labs](./1_IBM-Labs/)
 * Evidencias
   * [Apuntes propios del curso](./2_Notebooks_Evidencias_y_Apuntes/)
-  * [Evidencia del quiz](2_Notebooks_Evidencias_y_Apuntes/Graded_Questions-Module2.pdf)
+  * [Evidencia del quiz](2_Notebooks_Evidencias_y_Apuntes/Graded_Questions-Module3.pdf)
 
 Captura de pantalla mostrando evidencia de avance en el curso
 
-![Course 2 progress 3](../img/course2-progress-3.png)
+![Course 2 progress 1](../img/course2-progress-3.png)
