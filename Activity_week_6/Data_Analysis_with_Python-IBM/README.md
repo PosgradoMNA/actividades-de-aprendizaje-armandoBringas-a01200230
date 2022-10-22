@@ -12,4 +12,4 @@
 
 Captura de pantalla mostrando evidencia de avance en el curso
 
-![Course 2 progress 1](../img/course2-progress-3.png)
+![Course 2 progress 2](../../img/course2-progress-3.png)
