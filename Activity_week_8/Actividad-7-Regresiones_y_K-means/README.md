@@ -11,5 +11,7 @@ Armando Bringas Corpus (A01200230)
 
 * **Notebook 2 - K-means**
   * [Jupyter Notebook (.ipnyb)](TecMty_kmeans_target.ipynb)
+  * [HTML Notebook](TecMty_kmeans_target.html)
+  * [PDF](TecMty_kmeans_target.pdf)
 
   ![Notebook 2](./img/notebook2.png)
