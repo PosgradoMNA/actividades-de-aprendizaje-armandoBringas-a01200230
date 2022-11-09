@@ -6,8 +6,8 @@ Armando Bringas Corpus (A01200230)
 ## Contenidos
 
 * **Notebook 1 - Regresión**
-  * [Jupyter Notebook (.ipnyb)](TecMty_kmeans_target.ipynb)
-  * [HTML Notebook](https://htmlpreview.github.io/?https://github.com/PosgradoMNA/actividades-de-aprendizaje-armandoBringas-a01200230/blob/main/Activity_week_8/Actividad-7-Regresiones_y_K-means/TecMty_Regresion_lineal_polinomial.html)
+  * [Jupyter Notebook (.ipnyb)](TecMty_Regresion_lineal_polinomial.ipynb)
+  * [HTML Notebook](https://htmlpreview.github.io/?https://github.com/PosgradoMNA/actividades-de-aprendizaje-armandoBringas-a01200230/blob/dev/Activity_week_8/Actividad-7-Regresiones_y_K-means/TecMty_Regresion_lineal_polinomial.html)
   * [PDF](TecMty_Regresion_lineal_polinomial.pdf)
 
   ![Notebook 2](./img/notebook1.png)
