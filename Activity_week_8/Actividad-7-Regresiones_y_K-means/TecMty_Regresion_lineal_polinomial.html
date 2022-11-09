@@ -19546,7 +19546,7 @@ Name: Manufacturing Cost, Length: 1000, dtype: float64&gt;</pre>
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>[&lt;matplotlib.lines.Line2D at 0x1f1b2cffd60&gt;]</pre>
+<pre>[&lt;matplotlib.lines.Line2D at 0x29328388730&gt;]</pre>
 </div>
 
 </div>
@@ -19725,7 +19725,7 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Errores-(MAE,-RMSE,-$R%5E2$)">Errores (MAE, RMSE, $R^2$)<a class="anchor-link" href="#Errores-(MAE,-RMSE,-$R%5E2$)">&#182;</a></h3>
+<h3 id="Resultados-(intersecci%C3%B3n-y-coeficientes)">Resultados (intersecci&#243;n y coeficientes)<a class="anchor-link" href="#Resultados-(intersecci%C3%B3n-y-coeficientes)">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -19737,7 +19737,10 @@ class="
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[33]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">lin_reg_MAE</span><span class="p">,</span> <span class="n">lin_reg_RMSE</span><span class="p">,</span> <span class="n">lin_reg_r2</span> <span class="o">=</span> <span class="n">calculo_errores</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">y_predict</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"*****"</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"intersección: </span><span class="si">{</span><span class="n">lin_reg_model</span><span class="o">.</span><span class="n">intercept_</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"coefficientes: </span><span class="si">{</span><span class="n">lin_reg_model</span><span class="o">.</span><span class="n">coef_</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"*****"</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -19757,9 +19760,64 @@ class="
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Error medio Absoluto (MAE): 4.939597008496299
+<pre>**************************************************
+intersección: 67.6960501274973
+coefficientes: [-6.17788033]
+**************************************************
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Errores-(MAE,-RMSE,-$R%5E2$)">Errores (MAE, RMSE, $R^2$)<a class="anchor-link" href="#Errores-(MAE,-RMSE,-$R%5E2$)">&#182;</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[34]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"*****"</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">lin_reg_MAE</span><span class="p">,</span> <span class="n">lin_reg_RMSE</span><span class="p">,</span> <span class="n">lin_reg_r2</span> <span class="o">=</span> <span class="n">calculo_errores</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">y_predict</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"*****"</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>**************************************************
+Error medio Absoluto (MAE): 4.939597008496299
 Root Mean Squared Error: 6.874192552027152
 r2_score 0.5786435857137199
+**************************************************
 </pre>
 </div>
 </div>
@@ -19784,7 +19842,7 @@ r2_score 0.5786435857137199
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[34]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[35]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">y_hat</span> <span class="o">=</span> <span class="n">lin_reg_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
@@ -19858,7 +19916,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[35]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[36]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">poly_features</span> <span class="o">=</span> <span class="n">PolynomialFeatures</span><span class="p">(</span><span class="n">degree</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">include_bias</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -19883,6 +19941,60 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Resultados-(intersecci%C3%B3n-y-coeficientes)">Resultados (intersecci&#243;n y coeficientes)<a class="anchor-link" href="#Resultados-(intersecci%C3%B3n-y-coeficientes)">&#182;</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[37]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"*****"</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"intersección: </span><span class="si">{</span><span class="n">poly_reg_model</span><span class="o">.</span><span class="n">intercept_</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"coefficientes: </span><span class="si">{</span><span class="n">poly_reg_model</span><span class="o">.</span><span class="n">coef_</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"*****"</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>**************************************************
+intersección: 113.7238978878948
+coefficientes: [-33.90139997   4.87063075  -0.24671164]
+**************************************************
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="Errores-(MAE,-RMSE,-$R%5E2$)">Errores (MAE, RMSE, $R^2$)<a class="anchor-link" href="#Errores-(MAE,-RMSE,-$R%5E2$)">&#182;</a></h3>
 </div>
 </div>
@@ -19892,7 +20004,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[36]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[38]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">poly_reg_MAE</span><span class="p">,</span> <span class="n">poly_reg_RMSE</span><span class="p">,</span> <span class="n">poly_reg_r2</span> <span class="o">=</span> <span class="n">calculo_errores</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">y_predict</span><span class="p">)</span>
@@ -19942,7 +20054,7 @@ r2_score 0.6862742608497481
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[37]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[39]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">PollyPlot</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span><span class="p">,</span> <span class="n">poly_reg_model</span><span class="p">,</span> <span class="n">poly_features</span><span class="p">,</span> <span class="s1">'Polynomial Regression'</span><span class="p">)</span>
@@ -20007,7 +20119,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[38]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[40]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">poly_features</span> <span class="o">=</span> <span class="n">PolynomialFeatures</span><span class="p">(</span><span class="n">degree</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">include_bias</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -20040,7 +20152,7 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Errores-(MAE,-RMSE,-$R%5E2$)">Errores (MAE, RMSE, $R^2$)<a class="anchor-link" href="#Errores-(MAE,-RMSE,-$R%5E2$)">&#182;</a></h3>
+<h3 id="Resultados-(intersecci%C3%B3n-y-coeficientes)">Resultados (intersecci&#243;n y coeficientes)<a class="anchor-link" href="#Resultados-(intersecci%C3%B3n-y-coeficientes)">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -20049,10 +20161,13 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[39]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[41]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ridge_reg_MAE</span><span class="p">,</span> <span class="n">ridge_reg_RMSE</span><span class="p">,</span> <span class="n">ridge_reg_r2</span> <span class="o">=</span> <span class="n">calculo_errores</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"*****"</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"intersección: </span><span class="si">{</span><span class="n">ridge_model</span><span class="o">.</span><span class="n">named_steps</span><span class="p">[</span><span class="s1">'ridge'</span><span class="p">]</span><span class="o">.</span><span class="n">intercept_</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"coefficientes: </span><span class="si">{</span><span class="n">ridge_model</span><span class="o">.</span><span class="n">named_steps</span><span class="p">[</span><span class="s1">'ridge'</span><span class="p">]</span><span class="o">.</span><span class="n">coef_</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"*****"</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -20072,9 +20187,67 @@ class="
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Error medio Absoluto (MAE): 4.439115075861926
+<pre>**************************************************
+intersección: 40.07822650011423
+coefficientes: [-77.95629407  79.36389222 -28.68381857  79.36389222 -28.68381856
+ -22.26404709 -22.26404708  18.78952616  16.42708908 -28.68381856
+ -22.26404709  18.78952616  18.78952616  16.42708908 -16.13368489
+  16.42708908 -16.13368489 -27.8886696   17.70271199]
+**************************************************
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Errores-(MAE,-RMSE,-$R%5E2$)">Errores (MAE, RMSE, $R^2$)<a class="anchor-link" href="#Errores-(MAE,-RMSE,-$R%5E2$)">&#182;</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[42]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"*****"</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">ridge_reg_MAE</span><span class="p">,</span> <span class="n">ridge_reg_RMSE</span><span class="p">,</span> <span class="n">ridge_reg_r2</span> <span class="o">=</span> <span class="n">calculo_errores</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"*****"</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>**************************************************
+Error medio Absoluto (MAE): 4.439115075861926
 Root Mean Squared Error: 5.862760553595349
 r2_score 0.6935140728267526
+**************************************************
 </pre>
 </div>
 </div>
@@ -20099,7 +20272,7 @@ r2_score 0.6935140728267526
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[40]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[43]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">reg_model_obj</span> <span class="o">=</span> <span class="n">Ridge</span><span class="p">(</span><span class="n">alpha</span><span class="o">=</span><span class="n">alpha</span><span class="p">)</span>
@@ -20167,7 +20340,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[41]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[44]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">poly_features</span> <span class="o">=</span> <span class="n">PolynomialFeatures</span><span class="p">(</span><span class="n">degree</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">include_bias</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -20200,6 +20373,63 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Resultados-(intersecci%C3%B3n-y-coeficientes)">Resultados (intersecci&#243;n y coeficientes)<a class="anchor-link" href="#Resultados-(intersecci%C3%B3n-y-coeficientes)">&#182;</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[45]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"*****"</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"intersección: </span><span class="si">{</span><span class="n">lasso_model</span><span class="o">.</span><span class="n">named_steps</span><span class="p">[</span><span class="s1">'lasso'</span><span class="p">]</span><span class="o">.</span><span class="n">intercept_</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"coefficientes: </span><span class="si">{</span><span class="n">lasso_model</span><span class="o">.</span><span class="n">named_steps</span><span class="p">[</span><span class="s1">'lasso'</span><span class="p">]</span><span class="o">.</span><span class="n">coef_</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"*****"</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>**************************************************
+intersección: 40.07822650011428
+coefficientes: [-8.73899198  0.          0.          0.          0.          0.
+  0.          1.38761874  0.          0.          0.          0.09599955
+  0.          0.          0.          0.          0.          0.
+  0.        ]
+**************************************************
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="Errores-(MAE,-RMSE,-$R%5E2$)">Errores (MAE, RMSE, $R^2$)<a class="anchor-link" href="#Errores-(MAE,-RMSE,-$R%5E2$)">&#182;</a></h3>
 </div>
 </div>
@@ -20209,7 +20439,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[42]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[46]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">lasso_reg_MAE</span><span class="p">,</span> <span class="n">lasso_reg_RMSE</span><span class="p">,</span> <span class="n">lasso_reg_r2</span> <span class="o">=</span> <span class="n">calculo_errores</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
@@ -20259,7 +20489,7 @@ r2_score 0.6080776442471629
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[43]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[47]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">lasso_model_obj</span> <span class="o">=</span> <span class="n">Lasso</span><span class="p">(</span><span class="n">alpha</span><span class="o">=</span><span class="n">alpha</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
@@ -20316,7 +20546,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[44]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[48]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">error_comparison</span> <span class="o">=</span> <span class="p">{</span>
@@ -20351,7 +20581,7 @@ class="
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[44]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[48]:</div>
 
 
 
@@ -20434,7 +20664,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[45]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[49]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Aplicamos un 'melt' que es un 'unpivot' de los datos para que podamos graficarlos</span>
@@ -20521,7 +20751,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[46]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[50]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'https://raw.githubusercontent.com/marypazrf/bdd/main/kc_house_data.csv'</span><span class="p">)</span>
@@ -20541,7 +20771,7 @@ class="
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[46]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[50]:</div>
 
 
 
@@ -20845,7 +21075,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[47]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[51]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
@@ -20909,7 +21139,7 @@ memory usage: 3.5+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[48]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[52]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
@@ -20928,7 +21158,7 @@ memory usage: 3.5+ MB
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[48]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[52]:</div>
 
 
 
@@ -21174,7 +21404,7 @@ memory usage: 3.5+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[49]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[53]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">'id'</span><span class="p">,</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
@@ -21194,7 +21424,7 @@ memory usage: 3.5+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[50]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[54]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span> 
@@ -21251,7 +21481,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[51]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[55]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#columns = df.columns.drop('price')</span>
@@ -21273,7 +21503,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[52]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[56]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span> <span class="o">=</span> <span class="mf">0.3</span><span class="p">,</span> <span class="n">random_state</span> <span class="o">=</span> <span class="mi">42</span><span class="p">)</span>
@@ -21346,7 +21576,7 @@ Tamaño del X_test: (6484, 4)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[53]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[57]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">lin_reg_model</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">(</span><span class="n">fit_intercept</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -21366,7 +21596,7 @@ Tamaño del X_test: (6484, 4)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Errores-(MAE,-RMSE,-R-squared)">Errores (MAE, RMSE, R-squared)<a class="anchor-link" href="#Errores-(MAE,-RMSE,-R-squared)">&#182;</a></h3>
+<h3 id="Resultados-(intersecci%C3%B3n-y-coeficientes)">Resultados (intersecci&#243;n y coeficientes)<a class="anchor-link" href="#Resultados-(intersecci%C3%B3n-y-coeficientes)">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -21375,10 +21605,13 @@ Tamaño del X_test: (6484, 4)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[54]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[58]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">lin_reg_MAE</span><span class="p">,</span> <span class="n">lin_reg_RMSE</span><span class="p">,</span> <span class="n">lin_reg_r2</span> <span class="o">=</span> <span class="n">calculo_errores</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">y_predict</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"*****"</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"intersección: </span><span class="si">{</span><span class="n">lin_reg_model</span><span class="o">.</span><span class="n">intercept_</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"coefficientes: </span><span class="si">{</span><span class="n">lin_reg_model</span><span class="o">.</span><span class="n">coef_</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"*****"</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -21398,9 +21631,64 @@ Tamaño del X_test: (6484, 4)
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Error medio Absoluto (MAE): 162006.60695814595
+<pre>**************************************************
+intersección: [-630229.67952031]
+coefficientes: [[ 2.29742473e+02  1.03623835e+05 -8.00558306e+01  2.09001856e+01]]
+**************************************************
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Errores-(MAE,-RMSE,-R-squared)">Errores (MAE, RMSE, R-squared)<a class="anchor-link" href="#Errores-(MAE,-RMSE,-R-squared)">&#182;</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[59]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"*****"</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">lin_reg_MAE</span><span class="p">,</span> <span class="n">lin_reg_RMSE</span><span class="p">,</span> <span class="n">lin_reg_r2</span> <span class="o">=</span> <span class="n">calculo_errores</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">y_predict</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"*****"</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>**************************************************
+Error medio Absoluto (MAE): 162006.60695814595
 Root Mean Squared Error: 248483.81686359108
 r2_score 0.5418758377891657
+**************************************************
 </pre>
 </div>
 </div>
@@ -21436,7 +21724,7 @@ r2_score 0.5418758377891657
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[55]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[60]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">poly_features</span> <span class="o">=</span> <span class="n">PolynomialFeatures</span><span class="p">(</span><span class="n">degree</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">include_bias</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -21461,7 +21749,7 @@ r2_score 0.5418758377891657
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Errores-(MAE,-RMSE,-$R%5E2$)">Errores (MAE, RMSE, $R^2$)<a class="anchor-link" href="#Errores-(MAE,-RMSE,-$R%5E2$)">&#182;</a></h3>
+<h3 id="Resultados-(intersecci%C3%B3n-y-coeficientes)">Resultados (intersecci&#243;n y coeficientes)<a class="anchor-link" href="#Resultados-(intersecci%C3%B3n-y-coeficientes)">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -21470,10 +21758,13 @@ r2_score 0.5418758377891657
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[56]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[61]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">poly_reg_MAE</span><span class="p">,</span> <span class="n">poly_reg_RMSE</span><span class="p">,</span> <span class="n">poly_reg_r2</span> <span class="o">=</span> <span class="n">calculo_errores</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">y_predict</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"*****"</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"intersección: </span><span class="si">{</span><span class="n">poly_reg_model</span><span class="o">.</span><span class="n">intercept_</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"coefficientes: </span><span class="si">{</span><span class="n">poly_reg_model</span><span class="o">.</span><span class="n">coef_</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"*****"</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -21493,9 +21784,72 @@ r2_score 0.5418758377891657
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Error medio Absoluto (MAE): 147040.24271547626
+<pre>**************************************************
+intersección: [450357.13043263]
+coefficientes: [[ 6.63515932e+02 -1.05797891e+05 -1.13977634e+02 -6.07233060e+02
+   2.07758915e-02 -2.35793475e+02  3.39855881e-01 -9.16167201e-02
+   2.18683522e+04  1.61364707e+01  1.53631735e+02 -2.05790316e-01
+  -7.84630532e-03  1.01676301e-01  7.13371080e-05 -3.31922465e-02
+  -2.40537325e-04  1.22182010e-05  2.20320152e+01 -3.61454518e-03
+   4.12960473e-02  3.12707787e-04  2.08715801e-05 -7.07347081e-05
+  -1.38489750e+03  3.05198356e+00 -1.37511474e+01 -7.87933132e-04
+  -2.32567625e-02 -5.05143502e-03 -1.39369270e-04  2.96969026e-05
+  -2.05377633e-05  3.32147430e-05]]
+**************************************************
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Errores-(MAE,-RMSE,-$R%5E2$)">Errores (MAE, RMSE, $R^2$)<a class="anchor-link" href="#Errores-(MAE,-RMSE,-$R%5E2$)">&#182;</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[62]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"*****"</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">poly_reg_MAE</span><span class="p">,</span> <span class="n">poly_reg_RMSE</span><span class="p">,</span> <span class="n">poly_reg_r2</span> <span class="o">=</span> <span class="n">calculo_errores</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">y_predict</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"*****"</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>**************************************************
+Error medio Absoluto (MAE): 147040.24271547626
 Root Mean Squared Error: 232498.00190120665
 r2_score 0.5989251510287183
+**************************************************
 </pre>
 </div>
 </div>
@@ -21531,7 +21885,7 @@ r2_score 0.5989251510287183
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[57]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[63]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">poly_features</span> <span class="o">=</span> <span class="n">PolynomialFeatures</span><span class="p">(</span><span class="n">degree</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">include_bias</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -21564,7 +21918,7 @@ r2_score 0.5989251510287183
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Error">Error<a class="anchor-link" href="#Error">&#182;</a></h3>
+<h3 id="Resultados-(intersecci%C3%B3n-y-coeficientes)">Resultados (intersecci&#243;n y coeficientes)<a class="anchor-link" href="#Resultados-(intersecci%C3%B3n-y-coeficientes)">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -21573,10 +21927,13 @@ r2_score 0.5989251510287183
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[58]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[64]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ridge_reg_MAE</span><span class="p">,</span> <span class="n">ridge_reg_RMSE</span><span class="p">,</span> <span class="n">ridge_reg_r2</span> <span class="o">=</span> <span class="n">calculo_errores</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"*****"</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"intersección: </span><span class="si">{</span><span class="n">ridge_model</span><span class="o">.</span><span class="n">named_steps</span><span class="p">[</span><span class="s1">'ridge'</span><span class="p">]</span><span class="o">.</span><span class="n">intercept_</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"coefficientes: </span><span class="si">{</span><span class="n">ridge_model</span><span class="o">.</span><span class="n">named_steps</span><span class="p">[</span><span class="s1">'ridge'</span><span class="p">]</span><span class="o">.</span><span class="n">coef_</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"*****"</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -21596,9 +21953,65 @@ r2_score 0.5989251510287183
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Error medio Absoluto (MAE): 150725.9130162672
+<pre>**************************************************
+intersección: [537640.17317732]
+coefficientes: [[  73755.19455307  257277.29234858 -261344.81272394 ...  115578.17067423
+   262797.77381452  140103.45512217]]
+**************************************************
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Error">Error<a class="anchor-link" href="#Error">&#182;</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[65]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"*****"</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">ridge_reg_MAE</span><span class="p">,</span> <span class="n">ridge_reg_RMSE</span><span class="p">,</span> <span class="n">ridge_reg_r2</span> <span class="o">=</span> <span class="n">calculo_errores</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"*****"</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>**************************************************
+Error medio Absoluto (MAE): 150725.9130162672
 Root Mean Squared Error: 912340.9941843494
 r2_score -5.175915677094912
+**************************************************
 </pre>
 </div>
 </div>
@@ -21634,7 +22047,7 @@ r2_score -5.175915677094912
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[59]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[66]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">poly_features</span> <span class="o">=</span> <span class="n">PolynomialFeatures</span><span class="p">(</span><span class="n">degree</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">include_bias</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -21689,7 +22102,7 @@ r2_score -5.175915677094912
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Error">Error<a class="anchor-link" href="#Error">&#182;</a></h3>
+<h3 id="Intersecci%C3%B3n-y-Resultados">Intersecci&#243;n y Resultados<a class="anchor-link" href="#Intersecci%C3%B3n-y-Resultados">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -21698,10 +22111,13 @@ r2_score -5.175915677094912
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[60]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[67]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">lasso_reg_MAE</span><span class="p">,</span> <span class="n">lasso_reg_RMSE</span><span class="p">,</span> <span class="n">lasso_reg_r2</span> <span class="o">=</span> <span class="n">calculo_errores</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"*****"</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"intersección: </span><span class="si">{</span><span class="n">lasso_model</span><span class="o">.</span><span class="n">named_steps</span><span class="p">[</span><span class="s1">'lasso'</span><span class="p">]</span><span class="o">.</span><span class="n">intercept_</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"coefficientes: </span><span class="si">{</span><span class="n">lasso_model</span><span class="o">.</span><span class="n">named_steps</span><span class="p">[</span><span class="s1">'lasso'</span><span class="p">]</span><span class="o">.</span><span class="n">coef_</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"*****"</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -21721,9 +22137,65 @@ r2_score -5.175915677094912
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Error medio Absoluto (MAE): 147842.20914431222
+<pre>**************************************************
+intersección: [537640.17317733]
+coefficientes: [  8885.166244    39531.83726265  -1835.8176543  ...   2975.52735624
+  30135.7002611  -31414.91345422]
+**************************************************
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Error">Error<a class="anchor-link" href="#Error">&#182;</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[68]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"*****"</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">lasso_reg_MAE</span><span class="p">,</span> <span class="n">lasso_reg_RMSE</span><span class="p">,</span> <span class="n">lasso_reg_r2</span> <span class="o">=</span> <span class="n">calculo_errores</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"*****"</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>**************************************************
+Error medio Absoluto (MAE): 147842.20914431222
 Root Mean Squared Error: 412469.7475706219
 r2_score -0.2623249920317994
+**************************************************
 </pre>
 </div>
 </div>
@@ -21748,7 +22220,7 @@ r2_score -0.2623249920317994
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[61]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[69]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">error_comparison</span> <span class="o">=</span> <span class="p">{</span>
@@ -21783,7 +22255,7 @@ r2_score -0.2623249920317994
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[61]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[69]:</div>
 
 
 
@@ -21854,7 +22326,7 @@ r2_score -0.2623249920317994
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[62]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[70]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">error_comparison_df1</span> <span class="o">=</span> <span class="n">error_comparison_df</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="mi">2</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -21874,7 +22346,7 @@ r2_score -0.2623249920317994
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[62]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[70]:</div>
 
 
 
@@ -21940,7 +22412,7 @@ r2_score -0.2623249920317994
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[63]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[71]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Aplicamos un 'melt' que es un 'unpivot' de los datos para que podamos graficarlos</span>
@@ -21991,7 +22463,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[64]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[72]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">error_comparison_df2</span> <span class="o">=</span> <span class="n">error_comparison_df</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -22011,7 +22483,7 @@ class="
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[64]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[72]:</div>
 
 
 
@@ -22068,7 +22540,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[65]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[73]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Aplicamos un 'melt' que es un 'unpivot' de los datos para que podamos graficarlos</span>
@@ -22142,7 +22614,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[66]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[74]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span> <span class="o">=</span> <span class="mf">0.15</span><span class="p">,</span> <span class="n">train_size</span> <span class="o">=</span> <span class="mf">0.35</span><span class="p">,</span> <span class="n">random_state</span> <span class="o">=</span> <span class="mi">42</span><span class="p">)</span>
@@ -22204,14 +22676,20 @@ Tamaño del X_test: (3242, 4)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[67]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[75]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">lin_reg_model</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">(</span><span class="n">fit_intercept</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">lin_reg_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
 <span class="n">y_predict</span> <span class="o">=</span> <span class="n">lin_reg_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
 
+<span class="nb">print</span><span class="p">(</span><span class="s2">"*****"</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"intersección: </span><span class="si">{</span><span class="n">lin_reg_model</span><span class="o">.</span><span class="n">intercept_</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"coefficientes: </span><span class="si">{</span><span class="n">lin_reg_model</span><span class="o">.</span><span class="n">coef_</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"*****"</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"*****"</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
 <span class="n">lin_reg_MAE</span><span class="p">,</span> <span class="n">lin_reg_RMSE</span><span class="p">,</span> <span class="n">lin_reg_r2</span> <span class="o">=</span> <span class="n">calculo_errores</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">y_predict</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"*****"</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -22231,9 +22709,15 @@ Tamaño del X_test: (3242, 4)
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Error medio Absoluto (MAE): 164778.3916447209
+<pre>**************************************************
+intersección: [-611529.11035663]
+coefficientes: [[ 2.44683234e+02  9.55019597e+04 -7.35119836e+01  2.24798417e+01]]
+**************************************************
+**************************************************
+Error medio Absoluto (MAE): 164778.3916447209
 Root Mean Squared Error: 248835.91020031332
 r2_score 0.540576624447485
+**************************************************
 </pre>
 </div>
 </div>
@@ -22258,7 +22742,7 @@ r2_score 0.540576624447485
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[68]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[76]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">poly_features</span> <span class="o">=</span> <span class="n">PolynomialFeatures</span><span class="p">(</span><span class="n">degree</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">include_bias</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -22270,7 +22754,13 @@ r2_score 0.540576624447485
 <span class="n">poly_reg_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_poly</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
 <span class="n">y_predict</span> <span class="o">=</span> <span class="n">poly_reg_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_poly</span><span class="p">)</span>
 
+<span class="nb">print</span><span class="p">(</span><span class="s2">"*****"</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"intersección: </span><span class="si">{</span><span class="n">poly_reg_model</span><span class="o">.</span><span class="n">intercept_</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"coefficientes: </span><span class="si">{</span><span class="n">poly_reg_model</span><span class="o">.</span><span class="n">coef_</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"*****"</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"*****"</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
 <span class="n">poly_reg_MAE</span><span class="p">,</span> <span class="n">poly_reg_RMSE</span><span class="p">,</span> <span class="n">poly_reg_r2</span> <span class="o">=</span> <span class="n">calculo_errores</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">y_predict</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"*****"</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -22290,9 +22780,23 @@ r2_score 0.540576624447485
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Error medio Absoluto (MAE): 148054.32929226995
+<pre>**************************************************
+intersección: [37142.04583259]
+coefficientes: [[ 2.61705665e+02  3.61181368e+04  1.96803641e+02 -2.82036490e+02
+  -4.96479855e-01 -4.98609560e+01  1.14197766e+00  1.06783995e-01
+   3.70084373e+03 -1.31751974e+02  5.57209582e+01 -5.93571854e-01
+   2.99266750e-02  1.09563380e-02 -3.04975525e-05  7.98937925e-02
+  -4.77947308e-05  4.15740537e-05 -4.02570284e+00 -1.35659391e-01
+  -2.36318382e-03  2.08607737e-04 -1.45461931e-04 -2.03529442e-06
+   5.63832878e+01  2.07235622e+01 -7.36869706e+00  3.99551760e-02
+  -2.16156843e-03  8.42560336e-03 -1.25282085e-04  1.41984326e-04
+  -7.05660613e-05  2.16126902e-05]]
+**************************************************
+**************************************************
+Error medio Absoluto (MAE): 148054.32929226995
 Root Mean Squared Error: 226183.7142848149
 r2_score 0.6204144757159564
+**************************************************
 </pre>
 </div>
 </div>
@@ -22317,7 +22821,7 @@ r2_score 0.6204144757159564
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[69]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[77]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">poly_features</span> <span class="o">=</span> <span class="n">PolynomialFeatures</span><span class="p">(</span><span class="n">degree</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">include_bias</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -22337,7 +22841,13 @@ r2_score 0.6204144757159564
 
 <span class="n">y_pred</span> <span class="o">=</span> <span class="n">ridge_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_poly</span><span class="p">)</span>
 
+<span class="nb">print</span><span class="p">(</span><span class="s2">"*****"</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"intersección: </span><span class="si">{</span><span class="n">ridge_model</span><span class="o">.</span><span class="n">named_steps</span><span class="p">[</span><span class="s1">'ridge'</span><span class="p">]</span><span class="o">.</span><span class="n">intercept_</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"coefficientes: </span><span class="si">{</span><span class="n">ridge_model</span><span class="o">.</span><span class="n">named_steps</span><span class="p">[</span><span class="s1">'ridge'</span><span class="p">]</span><span class="o">.</span><span class="n">coef_</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"*****"</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"*****"</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
 <span class="n">ridge_reg_MAE</span><span class="p">,</span> <span class="n">ridge_reg_RMSE</span><span class="p">,</span> <span class="n">ridge_reg_r2</span> <span class="o">=</span> <span class="n">calculo_errores</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"*****"</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -22357,9 +22867,16 @@ r2_score 0.6204144757159564
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Error medio Absoluto (MAE): 147416.11076243696
+<pre>**************************************************
+intersección: [540134.8392385]
+coefficientes: [[ 43664.24048639 -19577.57212434 -28289.90533264 ...  21517.87988323
+   11437.88203838   6731.38961475]]
+**************************************************
+**************************************************
+Error medio Absoluto (MAE): 147416.11076243696
 Root Mean Squared Error: 233653.59188662685
 r2_score 0.5949283003652879
+**************************************************
 </pre>
 </div>
 </div>
@@ -22384,7 +22901,7 @@ r2_score 0.5949283003652879
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[70]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[78]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">poly_features</span> <span class="o">=</span> <span class="n">PolynomialFeatures</span><span class="p">(</span><span class="n">degree</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">include_bias</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -22404,7 +22921,12 @@ r2_score 0.5949283003652879
 
 <span class="n">y_pred</span> <span class="o">=</span> <span class="n">lasso_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_poly</span><span class="p">)</span>
 
+<span class="nb">print</span><span class="p">(</span><span class="s2">"*****"</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"intersección: </span><span class="si">{</span><span class="n">lasso_model</span><span class="o">.</span><span class="n">named_steps</span><span class="p">[</span><span class="s1">'lasso'</span><span class="p">]</span><span class="o">.</span><span class="n">intercept_</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"coefficientes: </span><span class="si">{</span><span class="n">lasso_model</span><span class="o">.</span><span class="n">named_steps</span><span class="p">[</span><span class="s1">'lasso'</span><span class="p">]</span><span class="o">.</span><span class="n">coef_</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"*****"</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
 <span class="n">lasso_reg_MAE</span><span class="p">,</span> <span class="n">lasso_reg_RMSE</span><span class="p">,</span> <span class="n">lasso_reg_r2</span> <span class="o">=</span> <span class="n">calculo_errores</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"*****"</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -22435,9 +22957,15 @@ r2_score 0.5949283003652879
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Error medio Absoluto (MAE): 147837.0988253276
+<pre>**************************************************
+intersección: [540134.83923849]
+coefficientes: [ 18965.60705708 -11580.43136729  40030.12013694 ...     -0.
+  -6721.4098935   -8958.53137009]
+**************************************************
+Error medio Absoluto (MAE): 147837.0988253276
 Root Mean Squared Error: 241074.03642916318
 r2_score 0.5687909589890132
+**************************************************
 </pre>
 </div>
 </div>
@@ -22462,7 +22990,7 @@ r2_score 0.5687909589890132
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[71]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[79]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">error_comparison</span> <span class="o">=</span> <span class="p">{</span>
@@ -22497,7 +23025,7 @@ r2_score 0.5687909589890132
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[71]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[79]:</div>
 
 
 
@@ -22568,7 +23096,7 @@ r2_score 0.5687909589890132
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[72]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[80]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">error_comparison_df1</span> <span class="o">=</span> <span class="n">error_comparison_df</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="mi">2</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -22588,7 +23116,7 @@ r2_score 0.5687909589890132
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[72]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[80]:</div>
 
 
 
@@ -22654,7 +23182,7 @@ r2_score 0.5687909589890132
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[73]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[81]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Aplicamos un 'melt' que es un 'unpivot' de los datos para que podamos graficarlos</span>
@@ -22705,7 +23233,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[74]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[82]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">error_comparison_df2</span> <span class="o">=</span> <span class="n">error_comparison_df</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -22725,7 +23253,7 @@ class="
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[74]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[82]:</div>
 
 
 
@@ -22782,7 +23310,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[75]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[83]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Aplicamos un 'melt' que es un 'unpivot' de los datos para que podamos graficarlos</span>
@@ -22826,54 +23354,6 @@ class="
 
 </div>
 
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-     </div>
-</div>
-</div>
 </div>
 
 </div>
